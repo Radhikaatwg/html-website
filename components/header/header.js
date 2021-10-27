@@ -1,7 +1,7 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light py-4">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light py-4" id="main-header">
             <a class="navbar-brand ps-4 m-auto" href="#">
                 <img src="resources/images/header-logo2.png" class="d-inline-block align-top" alt="">
             </a>
