@@ -63,6 +63,9 @@
     .mbp_pagination ul.page_navigation {
         padding-left: 20px;
     }
+    .application_statics {
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width:1024px) {
@@ -74,6 +77,19 @@
     }
     .feat_property.list.favorite_page.style2 .details .tc_content {
         padding-top: 0;
+    }
+    .banner-style-one .slide {
+        padding: 165px 60px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .main-banner-wrapper .carousel-btn-block {
+        top: 5%;
+    }
+    .main-banner-wrapper .carousel-btn-block .carousel-btn.left-btn {
+        left: auto;
+        right: 80px;
     }
 }
 
@@ -306,6 +322,38 @@
         height: 100%;
         padding-left: 15px;
     }
+    .mt30-xsd,
+    .mt30-767 {
+        margin-top: 30px !important;
+    }
+    .mb30-xsd,
+    .mb30-767 {
+        margin-bottom: 30px !important;
+    }
+    .single_property_social_share.style2 {
+        position: relative;
+        right: auto;
+    }
+    .lsd_list li {
+        margin-bottom: 10px;
+    }
+    .main-banner-wrapper .carousel-btn-block {
+        bottom: 12%;
+        top: auto;
+    }
+    .main-banner-wrapper.home10 .carousel-btn-block {
+        bottom: 20%;
+        top: auto;
+    }
+}
+
+@media only screen and (max-width:630px) {
+    .banner-style-one .slide {
+        padding: 165px 15px;
+    }
+    .banner-style-one .banner-btn {
+        display: block;
+    }
 }
 
 
@@ -432,6 +480,25 @@
         display: block;
         text-align: center;
     }
+    .application_statics {
+        padding: 15px;
+    }
+    .home10-mainslider .home-content {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .main-banner-wrapper .carousel-btn-block .carousel-btn.left-btn,
+    .main-banner-wrapper .carousel-btn-block .carousel-btn.right-btn {
+        display: none;
+    }
+    .banner-style-one .owl-dots {
+        bottom: 20px;
+        display: block !important;
+        text-align: center;
+    }
+    .banner-style-one .owl-dots .owl-dot span {
+        margin: 0 4px;
+    }
 }
 
 @media only screen and (max-width:414px) {
@@ -476,6 +543,12 @@
     .grid_list_search_result .right_area li {
         display: block;
     }
+    .iba_container {
+        display: block !important;
+    }
+    .iba_container .icon_box_area {
+        margin-bottom: 15px;
+    }
 }
 
 @media only screen and (max-width:400px) {
@@ -499,6 +572,9 @@
     }
     .sidebar_feature_property_slider.owl-carousel.owl-theme .owl-nav {
         display: none;
+    }
+    .tal-400 {
+        text-align: left !important;
     }
 }
 

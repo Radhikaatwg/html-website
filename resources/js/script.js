@@ -136,6 +136,10 @@
         $("body").removeClass("body_overlay");
     });
 
+    $(".overlay_close").on('click', function() {
+        $(".white_goverlay").toggle(500);
+    });
+
     if ($('.feature_property_slider').length) {
         $('.feature_property_slider').owlCarousel({
             loop: false,
@@ -302,6 +306,29 @@
         })
     }
 
+    if ($(".banner-style-one").length) {
+        $(".banner-style-one").owlCarousel({
+            loop: true,
+            items: 1,
+            margin: 0,
+            dots: true,
+            nav: true,
+            animateOut: "slideOutDown",
+            animateIn: "fadeIn",
+            active: true,
+            smartSpeed: 1000,
+            autoplay: false
+        });
+        $(".banner-carousel-btn .left-btn").on("click", function() {
+            $(".banner-style-one").trigger("next.owl.carousel");
+            return false;
+        });
+        $(".banner-carousel-btn .right-btn").on("click", function() {
+            $(".banner-style-one").trigger("prev.owl.carousel");
+            return false;
+        });
+    }
+
     function scrollToTop() {
         console.log("Scroll to Top called");
         $(window).scroll(function() {
@@ -318,5 +345,36 @@
             return false;
         });
     }
+
+    /*const ctx = $('#myChart');
+    const myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Principal Amount', 'Interest Amount'],
+            datasets: [{
+                label: 'EMI Calculator',
+                data: [40, 60],
+                backgroundColor: [
+                    'rgba(251, 136, 85, 1)',
+                    'rgba(146, 208, 96, 1)'
+                ],
+                borderColor: [
+                    '#eee'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                datalabels: {
+                    anchor: 'end',
+                    display: true,
+                    backgroundColor: '#ccc',
+                    color: 'blue'
+                }
+            }
+        }
+    });*/
 
 })(window.jQuery);
