@@ -345,6 +345,9 @@
         bottom: 20%;
         top: auto;
     }
+    .nav-pills .nav-link {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width:630px) {
@@ -375,6 +378,16 @@
     }
     .small_dropdown2 .dd_btn {
         width: 140px;
+    }
+    .visible-xs {
+        display: table-row !important;
+        background: #efefef !important;
+    }
+    .plans-rent td:first-child,
+    .plans-rent th:first-child,
+    .plans-let-out td:first-child,
+    .plans-let-out th:first-child {
+        display: none;
     }
 }
 

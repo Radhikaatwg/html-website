@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+
+    <link rel="stylesheet" href="resources/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <link rel="stylesheet" href="resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="resources/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main-header></main-header>
+        <!--Breadcrumb-->
+        <div class="p-5 mb-4 bg-secondary rounded-3">
+            <div class="container-fluid py-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Subscription Plans</li>
+                    </ol>
+                </nav>
+                <h2 class="col-custom">Subscription Plans</h2>
+            </div>
+        </div>
+        <div class="p-5 rounded shadow mb-5">
+            <nav>
+                <div class="nav nav-tabs nav-pills with-arrow flex-column flex-sm-row text-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-rent-tab" data-bs-toggle="tab" data-bs-target="#nav-rent" type="button" role="tab" aria-controls="nav-rent" aria-selected="true">I want to rent
+                        property</button>
+                    <button class="nav-link" id="nav-let-out-tab" data-bs-toggle="tab" data-bs-target="#nav-let-out" type="button" role="tab" aria-controls="nav-let-out" aria-selected="false">I want to let out my
+                        property</button>
+                    <button class="nav-link" id="nav-sell-tab" data-bs-toggle="tab" data-bs-target="#nav-sell" type="button" role="tab" aria-controls="nav-sell" aria-selected="false">I want to sell
+                        property</button>
+                    <button class="nav-link" id="nav-buy-tab" data-bs-toggle="tab" data-bs-target="#nav-buy" type="button" role="tab" aria-controls="nav-buy" aria-selected="false">I want to buy
+                        property</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-rent" role="tabpanel" aria-labelledby="nav-rent-tab">
+                    <div class="row mt-4">
+                        <div class="col-lg-8">
+                            <label for="budget" class="form-label">Select Budget</label>
+                            <input type="range" class="form-range custom-slider" value="20000" min="5000" max="50000" id="budget" oninput="input_budget.value = budget.value">
+                        </div>
+                        <div class="col-lg-4 pt-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">&#8377;</span>
+                                <input type="text" class="form-control" aria-label="Loan Amount" value="20000" id="input_budget" oninput="budget.value = input_budget.value" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table class="table table-hover table-bordered plans-rent">
+                            <thead>
+                                <tr>
+                                    <th scope="col">&nbsp;</th>
+                                    <th scope="col">VVIP <br>
+                                        <span>Advance Payment</span>
+                                        <hr>
+                                        <span>30 Days Rent</span> <br>
+                                        <span>Rs. 5000</span>
+                                    </th>
+                                    <th scope="col">VIP <br>
+                                        <span>Advance Payment</span>
+                                        <hr>
+                                        <span>15 Days Rent</span> <br>
+                                        <span>Rs. 2500</span>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Multiple Property visit until you are 100% satisfied</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Multiple Property visit until you are 100% satisfied</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Ready to move</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ready to move</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">100% Money back Guarantee</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">100% Money back Guarantee</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Same day property Handover Guarantee</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Same day property Handover Guarantee</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Priority visit slot</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Priority visit slot</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Priority booking of flat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Priority booking of flat</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Virtual Live property Visit</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Virtual Live property Visit</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Rent Agreement</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Rent Agreement</th>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">After Sales services</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">After Sales services</th>
+                                    <td>4 Months vacancy guarantee</td>
+                                    <td>2 Months vacancy guarantee</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><button class="btn btn-success">Fix Appointment</button></td>
+                                    <td><button class="btn btn-success">Fix Appointment</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-let-out" role="tabpanel" aria-labelledby="nav-let-out-tab">
+                    <div class="row mt-4">
+                        <div class="col-lg-8">
+                            <label for="exp_rent" class="form-label">Select Expected Rent</label>
+                            <input type="range" class="form-range custom-slider" value="20000" min="5000" max="50000" id="exp_rent" oninput="input_exp_rent.value = exp_rent.value">
+                        </div>
+                        <div class="col-lg-4 pt-4">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">&#8377;</span>
+                                <input type="text" class="form-control" aria-label="Loan Amount" value="20000" id="input_exp_rent" oninput="exp_rent.value = input_exp_rent.value" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table class="table table-hover table-bordered plans-let-out">
+                            <thead>
+                                <tr>
+                                    <th scope="col">&nbsp;</th>
+                                    <th scope="col">Maha Raja <br>
+                                        <span>Advance Payment</span>
+                                        <hr>
+                                        <span>30 Days Rent</span> <br>
+                                        <span>Rs. 5000</span>
+                                    </th>
+                                    <th scope="col">Raja <br>
+                                        <span>Advance Payment</span>
+                                        <hr>
+                                        <span>15 Days Rent</span> <br>
+                                        <span>Rs. 2500</span>
+                                    </th>
+                                    <th scope="col">Standard <br>
+                                        <span>Post Payment</span>
+                                        <hr>
+                                        <span>15 Days Rent</span> <br>
+                                        <span>Rs. 2500</span>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Rent Agreement</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Rent Agreement</th>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Photo Clicks</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Photo Clicks</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Video Shoot</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Video Shoot</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Property Measurement</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Property Measurement</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Refund Guarantee</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Refund Guarantee</th>
+                                    <td>110% if not let out in 30 days</td>
+                                    <td>100% if not let out in 45 days</td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">No Questions asked money back Guarantee</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">No Questions asked money back Guarantee</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Vacancy Zero Cost</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Vacancy Zero Cost</th>
+                                    <td>4 Months</td>
+                                    <td>2 Months</td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">End to End Support</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">End to End Support</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Verified Property Tag</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Verified Property Tag</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Display Property on Top</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Display Property on Top</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Personal Relationship Officer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Personal Relationship Officer</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+
+                                <tr class="visible-xs" aria-hidden="true">
+                                    <td>&nbsp;</td>
+                                    <td colspan="3">Priority Client Visit</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Priority Client Visit</th>
+                                    <td><strong><span class="checkmark">&#10003;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                    <td><strong><span class="wrong-sym">&#215;</span></strong></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><button class="btn btn-success">Select Plan</button></td>
+                                    <td><button class="btn btn-success">Select Plan</button></td>
+                                    <td><button class="btn btn-success">Select Plan</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-sell" role="tabpanel" aria-labelledby="nav-sell-tab">
+                    <div class="container mt20 text-center">
+                        Coming Soon
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-buy" role="tabpanel" aria-labelledby="nav-buy-tab">
+                    <div class="container mt20 text-center">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Real Estate Agent -->
+        <section class="start-partners bgc-thm pt50 pb50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="start_partner tac-smd">
+                            <h2>Become a Real Estate Agent</h2>
+                            <p>We only work with the best companies around the globe</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="parner_reg_btn tac-smd">
+                            <a class="btn btn-thm2" href="#">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main-footer></main-footer>
+    </div>
+
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="resources/js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="resources/js/owl.carousel.min.js"></script>
+    <script src="chart.js/chart.min.js"></script>
+    <script src="chart.js/chartjs-plugin-datalabels.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="components/header/header.js"></script>
+    <script src="components/footer/footer.js"></script>
+</body>
+
+</html>

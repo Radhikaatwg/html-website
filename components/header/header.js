@@ -12,16 +12,16 @@ class Header extends HTMLElement {
             <div class="collapse navbar-collapse justify-content-end ml20" id="navbarTogglerDemo02">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Listing</a>
+                    <a class="nav-link" href="product-listing.html">Listing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Plans</a>
+                    <a class="nav-link" href="plans.html">Plans</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Blog</a>
