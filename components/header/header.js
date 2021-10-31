@@ -18,16 +18,16 @@ class Header extends HTMLElement {
                     <a class="nav-link" href="product-listing.html">Listing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="plans.html">Plans</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="about-us.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login/Register</a>
+                    <a class="nav-link" href="login.html">Login/Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">List Property</a>

@@ -31,6 +31,7 @@
         max: 100000,
         values: [10000, 50000],
         slide: function(event, ui) {
+            console.log(ui);
             $(".amount1").val("₹ " + ui.values[0] + " - ₹ " + ui.values[1]);
             //$(".amount2").val(ui.values[1]);
         }
